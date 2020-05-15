@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+    blog_php:
+        container_name: blog_php_container
+        image: php:7.3.0-apache
+        ports:
+            - 5500:80
+        volumes:
+            - ./:/var/www/html
