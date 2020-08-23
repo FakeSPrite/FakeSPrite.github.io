@@ -135,11 +135,16 @@ $('document').ready(function(){
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
+			$('.bdgirl').fadeIn('slow');
 		});
 	});
 
 		
 	$('#wish_message').click(function(){
+		var audio1 = $('.song')[0];
+		var audio2 = $('.song2')[0];
+		audio1.pause();
+		audio2.play();
 		 vw = $(window).width()/2;
 
 		$('#b1,#b2,#b3,#b4,#b5,#b6,#b7').stop();

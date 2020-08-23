@@ -1271,6 +1271,9 @@ audio {
 	margin-top: 200px;
 	display: none;
 }
+.bdgirl {
+	display: none;
+}
 .message p {
 	font-family: 'Signika', sans-serif;
 	font-size: 30px;
