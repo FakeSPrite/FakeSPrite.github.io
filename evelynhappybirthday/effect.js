@@ -132,7 +132,7 @@ $('document').ready(function(){
 	});
 
 	$('#light_candle').click(function(){
-		$('.cake').parent().addClass('col-md-6').removeClass('col-md-12');
+		$('.cake').parent().switchClass( "col-md-12", "col-md-6", 1000, "easeInOutQuad" );
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
