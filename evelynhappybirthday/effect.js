@@ -132,6 +132,7 @@ $('document').ready(function(){
 	});
 
 	$('#light_candle').click(function(){
+		$('.cake').parent().addClass('col-md-6').removeClass('col-md-12');
 		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
@@ -171,6 +172,7 @@ $('document').ready(function(){
 	
 	$('#story').click(function(){
 		$(this).fadeOut('slow');
+		$('.bdgirl').fadeOut('fast');
 		$('.cake').fadeOut('fast').promise().done(function(){
 			$('.message').fadeIn('slow');
 		});
@@ -184,6 +186,7 @@ $('document').ready(function(){
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
+					$('.bdgirl').fadeIn('fast');
 				});
 				
 			}
